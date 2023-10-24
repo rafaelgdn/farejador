@@ -1,0 +1,23 @@
+{
+  "name": "farejador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "farejador:search:batch": "esbuild farejadorSearchBatch.js --bundle --outdir=dist --platform=node --minify && node dist/farejadorSearchBatch.js",
+    "farejador:search": "esbuild farejadorSearch.js --bundle --outdir=dist --platform=node && node dist/farejadorSearch.js",
+    "farejador:login": "esbuild farejadorLogin.js --bundle --outdir=dist --platform=node && node dist/farejadorLogin.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.48.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1"
+  },
+  "dependencies": {
+    "esbuild": "^0.19.2",
+    "puppeteer": "^21.1.0"
+  }
+}
